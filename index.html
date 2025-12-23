@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #5f72be, #9b23ea);
+      padding: 40px 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .projects-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 5px;
+      width: 100%;
+      background: linear-gradient(90deg, #6c63ff, #9b23ea);
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 25px 60px rgba(108, 99, 255, 0.35);
+    }
+
+    .card h3 {
+      margin-top: 10px;
+      color: #3f3d56;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #555;
+      margin: 12px 0;
+    }
+
+    .tags {
+      margin-top: 8px;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: #f1f1ff;
+      color: #5f5cff;
+      font-size: 0.75rem;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+
+    .links {
+      margin-top: 18px;
+    }
+
+    .links a {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 0.9rem;
+      padding: 9px 16px;
+      border-radius: 8px;
+      margin-right: 10px;
+      transition: all 0.25s ease;
+    }
+
+    .links i {
+      margin-right: 6px;
+    }
+
+    .live {
+      background: #6c63ff;
+      color: #fff;
+    }
+
+    .live:hover {
+      background: #584fd6;
+    }
+
+    .github {
+      border: 1px solid #6c63ff;
+      color: #6c63ff;
+    }
+
+    .github:hover {
+      background: #6c63ff;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>My Projects</h1><br>
+
+<div class="projects-container">
+
+  <div class="card">
+    <h3>Realtime DB Meter</h3>
+    <p>
+      Developed a real-time noise monitoring web application using live microphone input. Implemented RMS-based audio signal processing to estimate sound levels in dBA using Flask-SocketIO.
+    </p>
+    <div class="tags">
+      <span>Flask</span>
+      <span>Streamlit</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Java Script</span>
+    </div>
+    <div class="links">
+      <a class="github" href="https://github.com/Raj21505/db-monitor">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Weather App</h3>
+    <p>
+      Developed a real-time weather application using a REST API with city-based search, auto-location detection, 5-day forecast, and dark mode support.
+    </p>
+    <div class="tags">
+      <span>Streamlit</span>
+      <span>APIs</span>
+      <span>Python</span>
+      <span>HTML</span>
+    </div>
+    <div class="links">
+      <a class="live" href="https://live-weather-forecasting.streamlit.app/">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+      </a>
+      <a class="github" href="https://github.com/Raj21505/weather-forecast">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Rock Paper Scissors</h3>
+    <p>
+      A browser-based Rock Paper Scissors game built with HTML, CSS, and JavaScript featuring dynamic rounds, score tracking, and interactive gameplay.
+    </p>
+    <div class="tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Java Script</span>
+    </div>
+    <div class="links">
+      <a class="live" href="https://rpc-01.netlify.app/">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+      </a>
+      <a class="github" href="https://github.com/Raj21505/rock-paper-scissor">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>IPL Score Predictor</h3>
+    <p>
+      Built a web application to predict IPL match scores using Python and Machine Learning. Implemented data preprocessing and model-based score prediction logic. Developed an interactive UI using Streamlit and deployed the app online.
+    </p>
+    <div class="tags">
+      <span>Python</span>
+      <span>Streamlit</span>
+      <span>ML Model</span>
+    </div>
+    <div class="links">
+      <a class="live" href="https://ipl-score-predict.streamlit.app/">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+      </a>
+      <a class="github" href="https://github.com/Raj21505/ipl-score-predictor">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Number Guess</h3>
+    <p>
+      Developed a responsive web application using JavaScript, HTML, and CSS featuring real-time feedback and state management. Implemented DOM manipulation to track user attempts and provide instant High/Low validation without page reloads.
+    </p>
+    <div class="tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Java Script</span>
+    </div>
+    <div class="links">
+      <a class="live" href="https://digit-guess.netlify.app/">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+      </a>
+      <a class="github" href="https://github.com/Raj21505/number-guessing-game">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Car Analysis Dashboard</h3>
+    <p>
+      Developed an interactive Power BI dashboard to analyze sales, profit, growth, and quantity using custom DAX measures and multi-dataset modeling.
+    </p>
+    <div class="tags">
+      <span>Power BI</span>
+      <span>DAX</span>
+      <span>Data Analytics</span>
+    </div>
+    <div class="links">
+      <a class="github" href="https://github.com/Raj21505/car-sales-analysis">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
